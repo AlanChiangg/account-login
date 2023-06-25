@@ -73,13 +73,19 @@ npm i -g nodemon
 MONGODB_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluster0.xxxx.xxxx.net/<Your MongoDB Table><?retryWrites=true&w=majority
 ```
 
-6. 啟動伺服器，執行 app.js 檔案
+6. 加入預設帳密到資料庫
+
+```
+npm run seed
+```
+
+7. 啟動伺服器，執行 app.js 檔案
 
 ```
 npm run dev
 ```
 
-7. 當 terminal 出現以下字樣，表示伺服器與資料庫已啟動並成功連結
+8. 當 terminal 出現以下字樣，表示伺服器與資料庫已啟動並成功連結
 
 ```
 Express is running on http://localhost:3000
