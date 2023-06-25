@@ -9,6 +9,8 @@ require('./config/mongoose')
 app.engine('hbs', engine({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
 
+app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
 app.use(routes)
 
 app.listen(port, () => {
